@@ -1,0 +1,12 @@
+fastcgi_cache_path /opt/logs/fastcgi_cache levels=1:2 keys_zone=TEST:10m inactive=5m;
+fastcgi_connect_timeout 300;
+fastcgi_send_timeout 300;
+fastcgi_read_timeout 300;
+fastcgi_buffer_size 64k;
+fastcgi_buffers 4 64k;
+fastcgi_busy_buffers_size 128k;
+fastcgi_temp_file_write_size 128k;
+fastcgi_cache TEST;
+fastcgi_cache_valid 200 302 1h;
+fastcgi_cache_valid 301 1d;
+fastcgi_cache_valid any 1m;

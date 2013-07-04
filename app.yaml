@@ -1,0 +1,3 @@
+appid: 10000
+install: [php-mysql]
+start: $PHP_FPM_START
